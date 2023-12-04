@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="card">
+        <div class="card-body">
+            {{form.as_p}}<br>
+    <input type="submit" class="btn btn-warning">
+        </div>
+    </div>
+
+</form>
+{% endblock %}

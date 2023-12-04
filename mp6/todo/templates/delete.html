@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <form method="POST" class="p-3 shadow">
+            {% csrf_token %}
+          <div style="text-align:center;">
+            <h4>Do You Complete This Task ?</h4><br>
+            <h5><button class="btn btn-success">SubmiT</button></h5>
+          </div>
+        </form>
+    </div>
+
+</body>
+</html>
+{% endblock %}
